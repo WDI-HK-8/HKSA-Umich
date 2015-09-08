@@ -10,10 +10,6 @@
     top: 0;
     z-index: 10000;
 
-    ul:first-child li a:hover {
-      color: #ffcb05;
-    }
-
     li a {
       color: #ffcb05;
       font-size: 28px;
@@ -60,7 +56,8 @@
     padding-top: 80px;
     padding-left: 300px;
     padding-right: 300px;
-    height: 520px;
+    padding-bottom: 80px;
+    height: auto;
     background-color: #00274c;
     color: white;
 
@@ -72,8 +69,139 @@
     p {
       font-size: 28px;
     }
+  }
+
+  .what_we_do {
+    text-align: center;
+    padding-top: 80px;
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-bottom: 80px;
+    height: auto;
+    background-color: #ffcb05;
+    color: white;
+    
+    h4 {
+      font-size: 60px;
+      margin-bottom: 50px; 
+    }
+
+    .one_wwd {
+      text-align: center;
+
+      div.icon {
+        text-align: center;
+        height: 180px;
+        width: 180px;
+        border-radius: 50%;
+        border: 1px solid white;
+        font-size: 100px;
+        padding-top: 10px;
+        padding-left: 5px;
+        margin-left: 60px;
+      }
+
+      .glyphicon-glass {
+        margin-top: 30px;
+      }
+
+      .hvr-bounce-in.icon {
+        margin-left: 10px;
+      }
+
+      h5 {
+        font-size: 28px;
+        margin-top: 20px;
+      }
+
+      p {
+        font-size: 18px;
+        margin-top: 10px;
+      }
+    }
+
+
 
   }
+
+  .contact_us {
+    text-align: center;
+    height: auto;
+    padding-bottom: 100px;
+    padding-top: 80px;
+    background-color: #00274c;
+
+    h4 {
+      font-size: 60px;
+      margin-bottom: 50px;
+      color: white;
+    }
+
+    .contact_wrapper {
+      text-align: center;
+    }
+
+    .email {
+      text-align: center;
+      height: 120px;
+      width: 120px;
+      margin-left: 100px;
+      border-radius: 50%;
+      border: 1px solid white;
+    }
+
+    .facebook {
+      text-align: center;
+      height: 120px;
+      width: 120px;
+      margin-left: 30px;
+      border-radius: 50%;
+      border: 1px solid white;
+    }
+
+    span {
+      font-size: 50px;
+      color: white;
+      padding-top: 30px;
+    }
+
+    a:hover span{
+      color: #ffcb05;
+    }
+
+    a:hover div{
+      border: 1px solid #ffcb05;
+    }
+
+  }
+
+  .footer {
+    height: auto;
+    padding-bottom: 20px;
+    text-align: center;
+    padding-top: 20px;
+
+    p {
+      font-size: 18px;
+
+      span {
+        text-decoration: underline;
+        color: DarkSlateBlue;
+      }
+    }
+  }
+
+  div.clear {
+    clear: both;
+  }
+
+
+
+
+
+
+
+
 
 
 

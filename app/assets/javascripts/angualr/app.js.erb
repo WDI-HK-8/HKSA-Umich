@@ -8,5 +8,8 @@ app.config(['$routeProvider', function($routeProvider){
       templateUrl: "<%= asset_path('static_pages/index.html') %>",
       controller: 'staticPagesCtrl'
     })
-
+    .when('/people', {
+      templateUrl: "<%= asset_path('people/index.html')%>",
+      controller: 'peopleCtrl'
+    })
 }])
