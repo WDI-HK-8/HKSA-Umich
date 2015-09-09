@@ -1,0 +1,259 @@
+.people {
+  
+  .navbar {
+    background-color: rgba(0,0,0,0.3);
+    height: 100px;
+    border: none;
+    padding-right: 10px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 10000;
+
+    li a {
+      color: #ffcb05;
+      font-size: 16px;
+      padding-top: 30px;
+    }
+
+    li a:visited {
+      color: #ffcb05;
+    }
+
+    li a:hover {
+      color: white;
+    }
+  }
+
+  .menu_button {
+    display: none;
+
+    button {
+      position: fixed;
+      z-index: 10000;
+      top: 5px;
+      right: 5px;
+      width: 60px;
+      height: 60px;
+
+      span {
+        display: fixed;
+      }
+    }
+
+    .dropdown-menu {
+      position: fixed;
+      z-index: 10000;
+      top: 70px;
+      width: 100%;
+      float: none;
+
+      li a {
+        font-size: 16px;
+        border-top: 1px solid whitesmoke;
+        padding-bottom: 15px;
+        padding-top: 15px;
+        color: darkgrey;
+      }
+
+      li a:first-child {
+        border-top: none;
+      }
+    }
+  }
+
+  .main_cover {
+    height: 500px;
+    background: url('http://cmxhub.com/wp-content/uploads/2015/04/o-HONG-KONG-facebook.jpg');
+    background-size: cover;
+    position: relative;
+
+    h2 {
+      font-size: 60px;
+      color: white;
+    }
+
+    h4 {
+      font-size: 40px;
+      color: white;
+    }
+
+    div.layer {
+      text-align: center;
+      position: absolute;
+      padding-top: 180px;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 500px;
+      background-color: rgba(0,0,0,0.6);
+    }
+  }
+
+  .member {
+    background-color: #ffcb05;
+
+    .member_wrapper {
+      padding-top: 100px;
+      padding-bottom: 80px;
+      color: white;
+
+      .one_member{
+        margin-top: 60px;
+        padding: 0;
+        text-align: center;
+
+        .member_pic {
+          border-radius: 50%;
+          height: 340px;
+        }
+
+        .one_member_layer {
+          display: none;
+          height: 340px;
+          background-color: rgba(0,0,0,0.7);
+          text-align: center;
+          position: absolute;
+          top: 0;
+          left: 0;
+          padding: 0;
+          padding-top: 100px;
+          border-radius: 50%;
+          width: 100%;
+
+          h5 {
+            font-size: 28px;
+            color: white;
+          }
+
+          small {
+            font-size: 15px;
+            color: white;
+          }
+
+          h6 {
+            font-size: 22px;
+            color: white;
+          }
+
+          div.member_contact {
+            font-size: 25px;
+
+            a span {
+              color: lightblue;
+            }
+
+            a:hover span {
+              color: skyBlue;
+            }
+          }
+
+        }
+      }
+
+      div.one_member:hover .one_member_layer{
+        display: block;
+      }
+    }
+  }
+
+  .previous_member {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #00274c;
+    color: white;
+
+    .previous_member_wrapper {
+      text-align: center;
+
+      h4 {
+        font-size: 60px;
+        margin-bottom: 30px;
+      }
+
+      h6 {
+        font-size: 28px;
+        margin-bottom: 40px;
+      }
+
+      .index {
+        color: white;
+        
+        a {
+          color: lightblue;
+        }
+
+        a:hover {
+          cursor: pointer;
+          color: skyblue;
+        }
+      }
+
+      .one_previous {
+        text-align: center;
+        margin-top: 65px;
+
+        h3 {
+          margin-bottom: 25px;
+        }
+
+        div.one_previous_pic {
+          height: 400px;
+          margin-bottom: 30px;
+        }
+
+        p {
+          margin-bottom: 60px;
+        }
+      }
+    }
+
+
+  }
+
+  .clear {
+    clear: both;
+  }
+}
+
+
+@media screen and (max-width: 1000px) {
+  .people {
+    .dropdown.menu_button {
+      display: block;
+      margin-top: 0;
+    }
+
+    .navbar {
+      display: none;
+    }
+
+    .main_cover .layer {
+      h2 {
+        font-size: 36px;
+      }
+
+      h4 {
+        font-size: 24px;
+      }
+    }
+
+    .previous_member {
+      .previous_member_wrapper h4 {
+        font-size: 40px;
+      }
+
+      .previous_member_wrapper h6 {
+        font-size: 18px;
+      }
+
+      h3 {
+        font-size: 26px;
+      }
+
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+}

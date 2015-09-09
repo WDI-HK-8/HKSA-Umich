@@ -12,8 +12,12 @@
 
     li a {
       color: #ffcb05;
-      font-size: 28px;
+      font-size: 16px;
       padding-top: 30px;
+    }
+
+    li a:visited {
+      color: #ffcb05;
     }
 
     li a:hover {
@@ -54,9 +58,7 @@
   .who_are_we {
     text-align: center;
     padding-top: 80px;
-    padding-left: 300px;
-    padding-right: 300px;
-    padding-bottom: 80px;
+    padding-bottom: 100px;
     height: auto;
     background-color: #00274c;
     color: white;
@@ -74,16 +76,16 @@
   .what_we_do {
     text-align: center;
     padding-top: 80px;
-    padding-left: 300px;
-    padding-right: 300px;
-    padding-bottom: 80px;
+    padding-bottom: 100px;
     height: auto;
     background-color: #ffcb05;
     color: white;
+
     
     h4 {
       font-size: 60px;
       margin-bottom: 50px; 
+      margin-top: 0;
     }
 
     .one_wwd {
@@ -98,7 +100,6 @@
         font-size: 100px;
         padding-top: 10px;
         padding-left: 5px;
-        margin-left: 60px;
       }
 
       .glyphicon-glass {
@@ -119,9 +120,6 @@
         margin-top: 10px;
       }
     }
-
-
-
   }
 
   .contact_us {
@@ -139,37 +137,38 @@
 
     .contact_wrapper {
       text-align: center;
+
+      a {
+        text-align: center;
+      }
+
+      .email {
+        text-align: center;
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+        border: 1px solid white;
+        font-size: 50px;
+        padding-top: 30px;
+        color: white;
+        margin-left: 60px;
+      }
+
+      .facebook {
+        text-align: center;
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+        border: 1px solid white;
+        font-size: 50px;
+        padding-top: 30px;
+        color: white;
+        margin-right: 60px;
+      }
     }
 
-    .email {
-      text-align: center;
-      height: 120px;
-      width: 120px;
-      margin-left: 100px;
-      border-radius: 50%;
-      border: 1px solid white;
-    }
-
-    .facebook {
-      text-align: center;
-      height: 120px;
-      width: 120px;
-      margin-left: 30px;
-      border-radius: 50%;
-      border: 1px solid white;
-    }
-
-    span {
-      font-size: 50px;
-      color: white;
-      padding-top: 30px;
-    }
-
-    a:hover span{
+    a:hover div.email, a:hover div.facebook{
       color: #ffcb05;
-    }
-
-    a:hover div{
       border: 1px solid #ffcb05;
     }
 
@@ -177,9 +176,9 @@
 
   .footer {
     height: auto;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 15px;
 
     p {
       font-size: 18px;
@@ -191,23 +190,137 @@
     }
   }
 
+
+
+  /* the menu icon */
+  .menu_button {
+    display: none;
+
+    button {
+      position: fixed;
+      z-index: 10000;
+      top: 5px;
+      right: 5px;
+      width: 60px;
+      height: 60px;
+
+      span {
+        display: fixed;
+      }
+    }
+
+    .dropdown-menu {
+      position: fixed;
+      z-index: 10000;
+      top: 70px;
+      width: 100%;
+      float: none;
+
+      li a {
+        font-size: 16px;
+        border-top: 1px solid whitesmoke;
+        padding-bottom: 15px;
+        padding-top: 15px;
+        color: darkgrey;
+      }
+
+      li a:first-child {
+        border-top: none;
+      }
+    }
+  }
+
   div.clear {
     clear: both;
   }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
+
+
+
+@media screen and (max-width: 1000px) {
+  .static_pages {
+    .dropdown.menu_button {
+      display: block;
+      margin-top: 0;
+    }
+
+    .navbar {
+      display: none;
+    }
+
+    .main_cover {
+      h1 {
+        font-size: 60px;
+      }
+
+      h4 {
+        font-size: 23px;
+      }
+    }
+
+    .who_are_we {
+      h4 {
+        font-size: 36px;
+      }
+
+      p {
+        font-size: 17px;
+      }
+    }
+
+    .what_we_do {
+      h4 {
+        font-size: 36px;
+      }
+
+      h5 {
+        font-size: 17px;
+      }
+
+      p {
+        font-size: 11px;
+      }
+
+      div.one_wwd {
+        margin-top: 60px;
+      }
+    }
+
+    .contact_us {
+      h4 {
+        font-size: 36px;
+      }
+
+      .contact_wrapper a div.email {
+        height: 100px;
+        width: 100px;
+        margin-left: 0;
+        font-size: 30px;
+      }
+
+      .contact_wrapper a div.facebook {
+        height: 100px;
+        width: 100px;
+        margin-right: 0;
+        font-size: 30px;
+      }
+    }
+
+    .footer {
+      p {
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
