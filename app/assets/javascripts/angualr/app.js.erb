@@ -12,4 +12,8 @@ app.config(['$routeProvider', function($routeProvider){
       templateUrl: "<%= asset_path('people/index.html')%>",
       controller: 'peopleCtrl'
     })
+    .when('/event', {
+      templateUrl: "<%= asset_path('event/index.html')%>",
+      controller: 'eventCtrl'
+    })
 }])
