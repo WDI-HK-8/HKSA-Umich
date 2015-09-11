@@ -16,4 +16,8 @@ app.config(['$routeProvider', function($routeProvider){
       templateUrl: "<%= asset_path('event/index.html')%>",
       controller: 'eventCtrl'
     })
+    .when('/trade', {
+      templateUrl: "<%= asset_path('trade/index.html')%>",
+      controller: 'tradeCtrl'
+    })
 }])

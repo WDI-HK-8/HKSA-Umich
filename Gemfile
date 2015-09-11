@@ -19,6 +19,8 @@ gem 'sass'
 gem 'sass-rails'
 gem 'font-awesome-sass'
 
+gem 'rails_12factor', group: :production
+
 group :development do
   gem "web-console"
   gem "better_errors"
