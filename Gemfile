@@ -10,9 +10,6 @@ gem 'unicorn'
 gem 'bower'
 # gem 'bcrypt', '~> 3.1.7'
 # gem 'active_hash'
-# Devise token
-gem 'devise_token_auth'
-gem 'omniauth'
 
 # Sass
 gem 'sass'
