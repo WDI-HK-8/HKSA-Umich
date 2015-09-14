@@ -3,8 +3,10 @@
   "version": "1.5.2",
   "dependencies": {
     "angular": "~1.4.5",
+    "angular-cookies": "~1.4.5",
     "angular-route": "~1.4.5",
     "bootstrap": "~3.3.5",
-    "hover": "Hover#~2.0.2"
+    "hover": "Hover#~2.0.2",
+    "ng-token-auth": "~0.0.28"
   }
 }

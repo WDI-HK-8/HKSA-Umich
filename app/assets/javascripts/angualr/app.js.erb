@@ -1,8 +1,9 @@
 'use strict'
 
-var app = angular.module('hksa_site', ['ngRoute']);
+var app = angular.module('hksa_site', ['ngRoute', 'ng-token-auth']);
 
-app.config(['$routeProvider', function($routeProvider){
+app.config(['$routeProvider', '$locationProvider', '$authProvider', function($routeProvider,$locationProvider,$authProvider) {
+  // Angular Routes
   $routeProvider
     .when('/', {
       templateUrl: "<%= asset_path('static_pages/index.html') %>",
@@ -16,8 +17,9 @@ app.config(['$routeProvider', function($routeProvider){
       templateUrl: "<%= asset_path('event/index.html')%>",
       controller: 'eventCtrl'
     })
-    .when('/trade', {
-      templateUrl: "<%= asset_path('trade/index.html')%>",
-      controller: 'tradeCtrl'
+
+    // config authprovider
+    $authProvider.configure({
+      apiUrl: "<%= ENV['URL'] || 'http://localhost:3000' %>"
     })
 }])
